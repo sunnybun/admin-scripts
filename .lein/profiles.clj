@@ -8,8 +8,12 @@
               [lein-clique "0.1.0"]
               [lein-marginalia "0.7.1"]
               [codox "0.6.4"]
+              [speclj "2.5.0"]
+              [lein-ancient "0.4.2"]
              ]
+         :test-paths ["spec"]
          :dependencies [[slamhound "1.3.3"]]
+         :profiles {:dev {:dependencies [[speclj "2.5.0"]]}}
          :aliases {"slamhound" [ "run" "-m" "slam.hound" ]}
       }}
 
